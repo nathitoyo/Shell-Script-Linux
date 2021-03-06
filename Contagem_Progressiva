@@ -1,0 +1,14 @@
+#shell define qual interpretador de comandos que sera usado
+#!/bin/sh
+#a variável $1 corresponde ao primeiro argumento, ou seja, testa se o usuário forneceu algum argumento de linha de comando
+contador=$1
+#enquanto o valor digitado for menor (-lt) que 16, faca
+while [ $contador -lt 16 ]
+do
+#exibe o conteúdo da variável
+echo "$contador"
+#incrementa na variável +1
+contador=$((contador+1))
+#fim do comando while
+done
+exit 0
